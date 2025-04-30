@@ -151,8 +151,12 @@ gulp.task('js-build-plugin', () => {
   return buildJS(`${config.src.jsPath}/script.js`, config.dist.jsPath);
 });
 
+gulp.task('js-build-lazyload-youtube', () => {
+  return buildJS(`${config.src.jsPath}/ucf-lazyload-youtube.js`, config.dist.jsPath);
+});
+
 // All js-related tasks
-gulp.task('js', gulp.series('es-lint-plugin', 'js-build-plugin'));
+gulp.task('js', gulp.series('es-lint-plugin', 'js-build-plugin', 'js-build-lazyload-youtube'));
 
 
 //
