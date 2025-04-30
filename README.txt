@@ -1,4 +1,4 @@
-=== {{My Project}} ===
+=== Lazyload Youtube Plugin ===
 Contributors: ucfwebcom
 Requires at least: 5.3 
 Tested up to: 5.3 
@@ -25,7 +25,7 @@ The CSS handles the preview styling before the video loads.
 
 == Documentation ==
 
-Head over to the [{{My Project}} wiki](https://github.com/UCF/{{My-Project}}/wiki) for detailed information about this plugin, installation instructions, and more.
+Head over to the [Lazyload Youtube Plugin wiki](https://github.com/UCF/{{My-Project}}/wiki) for detailed information about this plugin, installation instructions, and more.
 
 
 == Changelog ==
