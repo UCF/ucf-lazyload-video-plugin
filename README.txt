@@ -1,18 +1,26 @@
 === {{My Project}} ===
 Contributors: ucfwebcom
-Requires at least: 5.3 {{Update as needed!}}
-Tested up to: 5.3 {{Update as needed!}}
+Requires at least: 5.3 
+Tested up to: 5.3 
 Stable tag: 0.0.0
-Requires PHP: 7.4 {{Update as needed!}}
+Requires PHP: 7.4 
 License: GPLv3 or later
 License URI: http://www.gnu.org/copyleft/gpl-3.0.html
 
-{{Here is a short description of the plugin.  This should be no more than 150 characters.  No markup here.}}
-
+This plugin improves page performance by lazy-loading YouTube videos. It enqueues both a JavaScript file and a CSS file.
 
 == Description ==
 
-{{This is the long description.  No limit, and you can use Markdown (as well as in the following sections).}}
+## Lazy Load YouTube Plugin
+
+This plugin improves page performance by lazy-loading YouTube videos. It enqueues both a JavaScript file and a CSS file. The JavaScript listens for clicks on elements with the .youtube-preview class. Once clicked, it dynamically loads the YouTube video.
+
+To implement it:
+
+- Add the ".youtube-preview" class to your HTML element.
+- Set the "data-video-id" attribute with the corresponding YouTube video ID.
+
+The CSS handles the preview styling before the video loads.
 
 
 == Documentation ==
@@ -22,8 +30,8 @@ Head over to the [{{My Project}} wiki](https://github.com/UCF/{{My-Project}}/wik
 
 == Changelog ==
 
-= 1.0.0 = {{Update number as needed!}}
-* Initial release
+= 0.1.0 = 
+* pre - release
 
 
 == Upgrade Notice ==
@@ -33,7 +41,7 @@ n/a
 
 == Development ==
 
-Note that compiled, minified css and js {{edit this list if the plugin doesn't include css/js!}} files are included within the repo.  Changes to these files should be tracked via git (so that users installing the plugin using traditional installation methods will have a working plugin out-of-the-box.)
+Note that compiled, minified css and js files are included within the repo.  Changes to these files should be tracked via git (so that users installing the plugin using traditional installation methods will have a working plugin out-of-the-box.)
 
 [Enabling debug mode](https://codex.wordpress.org/Debugging_in_WordPress) in your `wp-config.php` file is recommended during development to help catch warnings and bugs.
 
@@ -41,7 +49,7 @@ Note that compiled, minified css and js {{edit this list if the plugin doesn't i
 * node v16+
 * gulp-cli
 
-= Instructions =
+= Instructions = {{Update required}}
 1. Clone the {{My-Project}} repo into your local development environment, within your WordPress installation's `plugins/` directory: `git clone https://github.com/UCF/{{My-Project}}.git`
 2. `cd` into the new {{My-Project}} directory, and run `npm install` to install required packages for development into `node_modules/` within the repo
 3. Optional: If you'd like to enable [BrowserSync](https://browsersync.io) for local development, or make other changes to this project's default gulp configuration, copy `gulp-config.template.json`, make any desired changes, and save as `gulp-config.json`.
