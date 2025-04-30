@@ -50,8 +50,8 @@ Note that compiled, minified css and js files are included within the repo.  Cha
 * gulp-cli
 
 = Instructions = {{Update required}}
-1. Clone the {{My-Project}} repo into your local development environment, within your WordPress installation's `plugins/` directory: `git clone https://github.com/UCF/{{My-Project}}.git`
-2. `cd` into the new {{My-Project}} directory, and run `npm install` to install required packages for development into `node_modules/` within the repo
+1. Clone the ucf-lazyload-youtube-plugin repo into your local development environment, within your WordPress installation's `plugins/` directory: `git clone https://github.com/UCF/ucf-lazyload-youtube-plugin.git`
+2. `cd` into the new ucf-lazyload-youtube-plugin directory, and run `npm install` to install required packages for development into `node_modules/` within the repo
 3. Optional: If you'd like to enable [BrowserSync](https://browsersync.io) for local development, or make other changes to this project's default gulp configuration, copy `gulp-config.template.json`, make any desired changes, and save as `gulp-config.json`.
 
     To enable BrowserSync, set `sync` to `true` and assign `syncTarget` the base URL of a site on your local WordPress instance that will use this plugin, such as `http://localhost/wordpress/my-site/`.  Your `syncTarget` value will vary depending on your local host setup.
@@ -64,9 +64,9 @@ Note that compiled, minified css and js files are included within the repo.  Cha
 7. Run `gulp watch` to continuously watch changes to scss and js files.{{edit this list if the plugin doesn't include css/js!}}  If you enabled BrowserSync in `gulp-config.json`, it will also reload your browser when plugin files change.
 
 = Other Notes =
-* This plugin's README.md file is automatically generated. Please only make modifications to the README.txt file, and make sure the `gulp readme` command has been run before committing README changes.  See the [contributing guidelines](https://github.com/UCF/{{My-Project}}/blob/master/CONTRIBUTING.md) for more information.
+* This plugin's README.md file is automatically generated. Please only make modifications to the README.txt file, and make sure the `gulp readme` command has been run before committing README changes.  See the [contributing guidelines](https://github.com/UCF/ucf-lazyload-youtube-plugin/blob/master/CONTRIBUTING.md) for more information.
 
 
 == Contributing ==
 
-Want to submit a bug report or feature request?  Check out our [contributing guidelines](https://github.com/UCF/{{My-Project}}/blob/master/CONTRIBUTING.md) for more information.  We'd love to hear from you!
+Want to submit a bug report or feature request?  Check out our [contributing guidelines](https://github.com/UCF/ucf-lazyload-youtube-plugin/blob/master/CONTRIBUTING.md) for more information.  We'd love to hear from you!
