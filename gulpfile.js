@@ -133,8 +133,12 @@ gulp.task('scss-build-plugin', () => {
   return buildCSS(`${config.src.scssPath}/style.scss`);
 });
 
+gulp.task('scss-build-lazyload-youtube-plugin', () => {
+  return buildCSS(`${config.src.scssPath}/ucf-lazyload-youtube.scss`);
+});
+
 // All plugin css-related tasks
-gulp.task('css', gulp.series('scss-lint-plugin', 'scss-build-plugin'));
+gulp.task('css', gulp.series('scss-lint-plugin', 'scss-build-plugin', 'scss-build-lazyload-youtube-plugin'));
 
 
 //
