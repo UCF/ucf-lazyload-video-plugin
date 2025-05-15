@@ -1,6 +1,6 @@
-# Lazyload Youtube Plugin #
+# UCF Lazyload Video Plugin #
 
-This plugin improves page performance by lazy-loading YouTube videos. It enqueues both a JavaScript file and a CSS file.
+This plugin improves page performance by lazy-loading videos. It enqueues both a JavaScript file and a CSS file.
 
 ## Description ##
 

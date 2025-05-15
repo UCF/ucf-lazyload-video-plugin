@@ -1,13 +1,13 @@
-=== Lazyload Youtube Plugin ===
+=== UCF Lazyload Video Plugin ===
 Contributors: ucfwebcom
-Requires at least: 5.3 
-Tested up to: 5.3 
+Requires at least: 5.3
+Tested up to: 5.3
 Stable tag: 0.0.0
-Requires PHP: 7.4 
+Requires PHP: 7.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/copyleft/gpl-3.0.html
 
-This plugin improves page performance by lazy-loading YouTube videos. It enqueues both a JavaScript file and a CSS file.
+This plugin improves page performance by lazy-loading videos. It enqueues both a JavaScript file and a CSS file.
 
 == Description ==
 
@@ -30,7 +30,7 @@ Head over to the [Lazyload Youtube Plugin wiki](https://github.com/UCF/My-Projec
 
 == Changelog ==
 
-= 0.1.0 = 
+= 0.1.0 =
 * pre - release
 
 
