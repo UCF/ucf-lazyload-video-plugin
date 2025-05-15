@@ -7,9 +7,9 @@ Requires PHP: 7.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/copyleft/gpl-3.0.html
 
-# UCF Lazyload Youtube Plugin #
+# UCF Lazyload Video Plugin #
 
-This plugin improves page performance by lazy-loading YouTube videos. It enqueues both a JavaScript file and a CSS file.
+This plugin improves page performance by lazy-loading videos. It enqueues both a JavaScript file and a CSS file.
 
 ## Description ##
 
