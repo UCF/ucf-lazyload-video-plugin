@@ -1,12 +1,9 @@
 # UCF Lazyload Video Plugin #
 
-
 ## To implement it: ##
-
 Simply adding the full YouTube URL will trigger the feature.
 
 ## Development ##
-
 Note that compiled, minified css and js files are included within the repo.  Changes to these files should be tracked via git (so that users installing the plugin using traditional installation methods will have a working plugin out-of-the-box.)
 [Enabling debug mode](https://codex.wordpress.org/Debugging_in_WordPress) in your `wp-config.php` file is recommended during development to help catch warnings and bugs.
 
