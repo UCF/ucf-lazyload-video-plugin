@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: UCF Lazyload Video Plugin
-Description: This plugin improves page performance by lazy-loading YouTube videos. It enqueues both a JavaScript file and a CSS file. The JavaScript listens for clicks on elements with the .youtube-preview class. Once clicked, it dynamically loads the YouTube video.
+Description: This plugin improves page performance by lazy-loading videos. It enqueues both a JavaScript file and a CSS file. The current version supports only YouTube videos but can be extended to support other video platforms.
 Version: 0.1.0
 Author: UCF Web Communications
 License: GPL3

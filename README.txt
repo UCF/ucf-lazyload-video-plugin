@@ -1,40 +1,10 @@
 === UCF Lazyload Video Plugin ===
-This plugin improves page performance by lazy-loading videos. It enqueues both a JavaScript file and a CSS file.
+
+This plugin improves page performance by lazy-loading videos. It enqueues both a JavaScript file and a CSS file. In this version, we added support for lazy-loading YouTube videos. When a YouTube link like https://youtube.com/watch?v={{YouTube Video ID}} or https://youtu.be/{{YouTube Video ID}} is embedded in the WordPress editor, it automatically displays the video’s default thumbnail with a play button overlay. When the user clicks the play button, the video is loaded directly from YouTube.
 
 ## To implement it: ##
 
-- Add the ```.youtube-preview``` class to your HTML element.
-- Set the ```data-video-id``` attribute with the corresponding YouTube video ID. The JavaScript dynamically pulls the data-video-id and loads the correct YouTube iframe on click.
-- If you want to use the youtube image thumbnail, you should make sure to add Youtube video ID to the src.
-
-## Markup Example ##
-
-Each video card includes:
-- A thumbnail preview image generated using the YouTube video ID.
-- An overlaid play button icon.
-- The YouTube video ID defined in the ```data-video-id``` attribute (required).
-
-```
-<div class="youtube-preview embed-responsive embed-responsive-16by9" data-video-id="{{$youtube_video_id}}">
-  <div class="embed-responsive-item overflow-hidden">
-    <img
-      src="https://img.youtube.com/vi/{{$youtube_video_id}}/hqdefault.jpg"
-      alt="Video Preview"
-      class="w-100 h-100 object-fit-cover"
-      loading="lazy"
-    />
-    <div class="play-button" aria-label="Play video">
-      <i class="fa-solid fa-circle-play rounded-circle bg-secondary box-shadow-soft-inverse fa-3x"></i>
-    </div>
-  </div>
-</div>
-```
-
-### Important ###
-- The data-video-id must use the YouTube video ID only (example: aYnvV5yD_w0), not the full URL.
-- This same ID must also be used to generate the thumbnail preview:
-
-``` src="https://img.youtube.com/vi/{{$youtube_video_id}}/hqdefault.jpg" ```
+Simply adding the full YouTube URL will trigger the feature.
 
 ## Development ##
 
@@ -44,15 +14,11 @@ Note that compiled, minified css and js files are included within the repo.  Cha
 ## Requirements ##
 * node v16+
 * gulp-cli
-
-## Optional Dependencies ##
-If you are using the example markup you need the following liberies
-* Bootstrap / Athena Framework classes for layout and responsiveness.
-* Font Awesome 6+ for the play icon.
-
+* Fontawesome
+* Bootstrap
 
 ## Instructions ##
-1. Clone the ucf-lazyload-youtube-plugin repo into your local development environment, within your WordPress installation's `plugins/` directory: `git clone https://github.com/UCF/ucf-lazyload-youtube-plugin.git`
+1. Clone the ucf-lazyload-youtube-plugin repo into your local development environment, within your WordPress installation's `plugins/` directory: `git clone https://github.com/UCF/ucf-lazyload-video-plugin.git`
 2. `cd` into the new ucf-lazyload-youtube-plugin directory, and run `npm install` to install required packages for development into `node_modules/` within the repo
 3. Optional: If you'd like to enable [BrowserSync](https://browsersync.io) for local development, or make other changes to this project's default gulp configuration, copy `gulp-config.template.json`, make any desired changes, and save as `gulp-config.json`.
 	@@ -65,7 +51,15 @@ If you are using the example markup you need the following liberies
