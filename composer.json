@@ -1,6 +1,6 @@
 {
     "name": "ucf/ucf-lazyload-video-plugin",
-    "description": "WordPress plugin that provides Lazyload for videos.",
+    "description": "WordPress plugin that provides lazyloading features for videos.",
     "type": "wordpress-plugin",
     "require": {
         "composer/installers": "~1.0"
