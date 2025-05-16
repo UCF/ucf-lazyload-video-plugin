@@ -133,12 +133,8 @@ gulp.task('scss-build-plugin', () => {
   return buildCSS(`${config.src.scssPath}/style.scss`);
 });
 
-gulp.task('scss-build-lazyload-youtube-plugin', () => {
-  return buildCSS(`${config.src.scssPath}/ucf-lazyload-youtube.scss`);
-});
-
 // All plugin css-related tasks
-gulp.task('css', gulp.series('scss-lint-plugin', 'scss-build-plugin', 'scss-build-lazyload-youtube-plugin'));
+gulp.task('css', gulp.series('scss-lint-plugin', 'scss-build-plugin'));
 
 
 //
@@ -155,12 +151,8 @@ gulp.task('js-build-plugin', () => {
   return buildJS(`${config.src.jsPath}/script.js`, config.dist.jsPath);
 });
 
-gulp.task('js-build-lazyload-youtube', () => {
-  return buildJS(`${config.src.jsPath}/ucf-lazyload-youtube.js`, config.dist.jsPath);
-});
-
 // All js-related tasks
-gulp.task('js', gulp.series('es-lint-plugin', 'js-build-plugin', 'js-build-lazyload-youtube'));
+gulp.task('js', gulp.series('es-lint-plugin', 'js-build-plugin'));
 
 
 //
