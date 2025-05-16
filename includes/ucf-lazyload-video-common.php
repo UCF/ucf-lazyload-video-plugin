@@ -30,4 +30,5 @@ if ( ! function_exists( 'ucf_lazyload_video_enqueue_styles' ) ) {
 	}
 	add_action( 'wp_enqueue_scripts', 'ucf_lazyload_video_enqueue_styles' );
 }
+
 ?>

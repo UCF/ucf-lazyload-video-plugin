@@ -18,3 +18,6 @@ define( 'UCF_LAZYLOAD_VIDEO__STATIC_URL', UCF_LAZYLOAD_VIDEO__PLUGIN_URL . '/sta
 define( 'UCF_LAZYLOAD_VIDEO__PLUGIN_FILE', __FILE__ );
 
 include_once UCF_LAZYLOAD_VIDEO__PLUGIN_DIR . 'includes/ucf-lazyload-video-common.php';
+include_once UCF_LAZYLOAD_VIDEO__PLUGIN_DIR . 'includes/youtube-lazyload-function.php';
+
+?>
