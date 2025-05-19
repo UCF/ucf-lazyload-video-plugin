@@ -2,7 +2,7 @@
 /*
 Plugin Name: UCF Lazyload Video Plugin
 Description: This plugin improves page performance by lazy-loading videos. It enqueues both a JavaScript file and a CSS file. The current version supports only YouTube videos but can be extended to support other video platforms.
-Version: 0.1.0
+Version: 0.1.1
 Author: UCF Web Communications
 License: GPL3
 GitHub Plugin URI: UCF/ucf-lazyload-video-plugin
