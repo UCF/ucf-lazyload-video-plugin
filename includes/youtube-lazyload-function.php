@@ -16,7 +16,7 @@ function ucf_lazyload_youtube_oembed_filter($html, $url, $attr) {
 
         ob_start();
         ?>
-        <div class="youtube-preview embed-responsive embed-responsive-16by9" data-video-id="<?php echo $video_id; ?>" tabindex="0" role="button" aria-label="Play video">
+        <div class="youtube-preview" data-video-id="<?php echo $video_id; ?>" tabindex="0" role="button" aria-label="Play video">
             <div class="embed-responsive-item overflow-hidden">
                 <img
                     src="<?php echo esc_url($thumbnail_url); ?>"
