@@ -5,10 +5,15 @@ add_filter('embed_oembed_html', 'ucf_lazyload_youtube_oembed_filter', 10, 3);
 function ucf_lazyload_youtube_oembed_filter($html, $url, $attr) {
     // Only run for YouTube URLs
     if (strpos($url, 'youtube.com') !== false || strpos($url, 'youtu.be') !== false) {
-        // Extract the YouTube video ID from the URL
-        preg_match('/(?:youtube\.com\/.*v=|youtu\.be\/)([^&\n]+)/', $url, $matches);
+        // Improved Regex to match multiple YouTube URL formats
+        preg_match(
+            '/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/|attribution_link.*[?&]v=)|youtu\.be\/|m\.youtube\.com\/watch\?v=)([a-zA-Z0-9_-]{11})/',
+            $url,
+            $matches
+        );
+
         if (!isset($matches[1])) {
-            return $html; // fallback to normal embed
+            return $html; // Fallback to normal embed if ID not found
         }
 
         $video_id = esc_attr($matches[1]);
