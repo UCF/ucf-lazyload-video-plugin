@@ -30,8 +30,11 @@ function ucf_lazyload_youtube_oembed_filter($html, $url, $attr) {
                     loading="lazy"
                 />
                 <div class="play-button" aria-label="Play video">
-                    <i class="fa-solid fa-circle-play rounded-circle bg-secondary box-shadow-soft-inverse fa-3x"></i>
-                    <span class="sr-only">Play video</span>
+					<svg viewBox="0 0 64 64" width="58" height="58" role="img" aria-label="Play video">
+						<circle cx="32" cy="32" r="30" fill="#FF0000"/>
+						<polygon points="25,18 25,46 46,32" fill="#FFFFFF"/>
+					</svg>
+					<span class="sr-only">Play video</span>
                 </div>
             </div>
         </div>
