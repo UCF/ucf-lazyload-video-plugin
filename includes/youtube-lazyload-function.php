@@ -17,7 +17,7 @@ function ucf_lazyload_youtube_oembed_filter($html, $url, $attr) {
         }
 
         $video_id = esc_attr($matches[1]);
-        $thumbnail_url = "https://img.youtube.com/vi/{$video_id}/hqdefault.jpg";
+        $thumbnail_url = "https://img.youtube.com/vi/{$video_id}/sddefault.jpg";
 
         ob_start();
         ?>
